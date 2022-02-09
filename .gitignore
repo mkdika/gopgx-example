@@ -1,0 +1,22 @@
+# Mac OS X files
+.DS_Store
+
+#IDE Files
+.vscode/
+.idea/
+
+#go files
+vendor/
+
+# specific extensions
+*.log
+*.bak
+*.tmp
+*.test
+*.out
+*.bin
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib

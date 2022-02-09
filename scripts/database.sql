@@ -1,0 +1,1 @@
+CREATE DATABASE gopgx_example;
