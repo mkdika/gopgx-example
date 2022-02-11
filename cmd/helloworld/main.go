@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// this is non connection pool connection
 func main() {
 	conn, err := pgx.Connect(context.Background(), os.Getenv("GOPGX_DATABASE_URL"))
 	if err != nil {
