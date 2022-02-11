@@ -7,8 +7,11 @@ import (
 	"os"
 )
 
+// from now on, other example will using pgxpool connection instead of pgx connect
 func main() {
 	dbpool, err := pgxpool.Connect(context.Background(), os.Getenv("GOPGX_DATABASE_URL"))
+	// TODO: set connection pooling config
+
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Unable to connect to database: %v\n", err)
 		os.Exit(1)
